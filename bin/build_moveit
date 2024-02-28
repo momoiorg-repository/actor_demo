@@ -1,0 +1,8 @@
+mkdir -p ~/roscommon/ws_moveit2/src
+cd ~/roscommon/ws_moveit2/src
+git clone https://github.com/ros-planning/moveit2.git -b humble
+for repo in moveit2/moveit2.repos $(f="moveit2/moveit2_humble.repos"; test -r $f && echo $f); do vcs import < "$repo"; done
+rosdep install -r --from-paths . --ignore-src --rosdistro humble -y
+cd ~/roscommon/ws_moveit2
+colcon build --event-handlers desktop_notification- status- --cmake-args -DCMAKE_BUILD_TYPE=Release
+

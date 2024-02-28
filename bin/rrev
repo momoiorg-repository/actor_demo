@@ -1,0 +1,4 @@
+cp /project/resource/turtlebot3_waffle_pi.gazebo.xacro /root/roscommon/turtlebot3_ws/install/turtlebot3_manipulation_description/share/turtlebot3_manipulation_description/gazebo
+cp /project/resource/sim_house.world /root/roscommon/turtlebot3_ws/install/turtlebot3_manipulation_bringup/share/turtlebot3_manipulation_bringup/worlds
+cp /project/resource/gazebo2.launch.py /root/roscommon/turtlebot3_ws/install/turtlebot3_manipulation_bringup/share/turtlebot3_manipulation_bringup/launch
+cp /project/resource/moveit_gazebo2.launch.py /root/roscommon/turtlebot3_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/launch

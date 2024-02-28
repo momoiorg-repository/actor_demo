@@ -1,0 +1,13 @@
+<root>
+    <BehaviorTree ID="bt_all">
+    <Sequence name="main">
+        <bt_search name="global_search"/>
+        <bt_catch name="pick_action"/>
+        <bt_carry name="carry_action"/>
+        <ArmHome name="arm_home" />
+        <Mini_Walk name="mini_walk" target="[-20]"/>
+        <SetBlackboard name="set_target" key="target_pose" value="[(1.0, 0.0, 0.0)]" />
+        <GoToPose name="move_to_place_loc"/>
+    </Sequence>
+    </BehaviorTree>
+</root>

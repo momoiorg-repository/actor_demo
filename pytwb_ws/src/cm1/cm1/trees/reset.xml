@@ -1,0 +1,10 @@
+<root>
+    <BehaviorTree ID="reset">
+    <Sequence name="main">
+        <Open name="open" />
+        <ArmHome name="arm_home" />
+        <SetBlackboard name="set_target" key="target_pose" value="[(0.0, 0.0, 0.0)]" />
+        <GoToPose name="move_to_place_loc"/>
+    </Sequence>
+    </BehaviorTree>
+</root>

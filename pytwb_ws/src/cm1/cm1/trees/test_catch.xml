@@ -1,0 +1,19 @@
+<root>
+    <BehaviorTree ID="test_catch">
+    <Sequence name="main">
+        <Watch name="watch_coke"/>
+        <ScheduleDestination name="schedule_final_target1"/>
+        <GoToPose name="reach"/>
+        <Watch name="watch_coke"/>
+        <GetFoundPoint name="get_found_point" distance="[0.1]" />
+        <GoToPose name="reach"/>
+        <Sleep name="sleep" time="[3]" />
+        <Face name="face"/>
+        <Open name="open"/> 
+        <Approach name="approach" target="[0.19]"/>
+        <Face name="face2"/>
+        <Sleep name="sleep" time="[3]" />
+        <Adjust name="adjust"/>
+    </Sequence>
+    </BehaviorTree>
+</root>

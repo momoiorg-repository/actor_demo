@@ -1,0 +1,7 @@
+<root>
+    <BehaviorTree ID="bt_catch">
+    <Sequence name="main">
+        <Watch name="watch_coke"/>
+    </Sequence>
+    </BehaviorTree>
+</root>

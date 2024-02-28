@@ -1,0 +1,2 @@
+source ~/roscommon/turtlebot3_ws/install/setup.bash
+ros2 launch turtlebot3_manipulation_bringup gazebo2.launch.py x_pose:=0 y_pose:=0

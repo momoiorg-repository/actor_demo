@@ -1,0 +1,22 @@
+<root>
+    <BehaviorTree ID="bt_catch">
+    <Sequence name="main">
+        <Watch name="watch_coke"/>
+        <ScheduleDestination name="schedule_final_target1"/>
+        <GoToPose name="reach"/>
+        <Watch name="watch_coke"/>
+        <GetFoundPoint name="get_found_point"/>
+        <GoToPose name="reach"/>
+        <Sleep name="sleep" actor="sleep" time="[5]" />
+        <Face name="face"/>
+        <Open name="open"/> 
+        <Approach name="approach" target="[0.19]"/>
+        <Adjust name="adjust"/>
+        <Pick name="pick"/> 
+        <Fit name="fit1"/> 
+        <Shift name="shift" target="[0.145]"/>
+        <Fit name="fit2"/> 
+        <Close name="close"/>
+    </Sequence>
+    </BehaviorTree>
+</root>

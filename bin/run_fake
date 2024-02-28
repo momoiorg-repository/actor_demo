@@ -1,0 +1,3 @@
+source ~/roscommon/ws_moveit2/install/setup.bash
+source ~/roscommon/turtlebot3_ws/install/setup.bash
+ros2 launch turtlebot3_manipulation_moveit_config moveit_fake.launch.py

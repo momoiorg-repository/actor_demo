@@ -1,0 +1,8 @@
+<root>
+    <BehaviorTree ID="bt_all">
+    <Sequence name="main">
+        <bt_search name="global_search"/>
+        <bt_catch name="pick_action"/>
+    </Sequence>
+    </BehaviorTree>
+</root>

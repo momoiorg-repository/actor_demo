@@ -1,0 +1,5 @@
+mkdir -p ~/roscommon/turtlebot3_ws/src
+cd ~/roscommon/turtlebot3_ws/src
+git clone -b humble-devel https://github.com/ROBOTIS-GIT/turtlebot3_manipulation.git
+cp /project/resource/turtlebot3_manipulation.urdf.xacro turtlebot3_manipulation/turtlebot3_manipulation_description/urdf/turtlebot3_manipulation.urdf.xacro
+cd ~/roscommon/turtlebot3_ws && colcon build --symlink-install

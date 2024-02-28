@@ -1,0 +1,5 @@
+run_base &
+sleep 10
+run_rviz &
+run_nav
+

@@ -1,0 +1,20 @@
+<root>
+    <BehaviorTree ID="bt_search">
+    <Sequence name="main">
+        <SetLocations name="set_locations"/>
+        <Retry  name="find_loop" num_failures="[10]">
+            <Sequence name="seek_target">
+                <Parallel name="seek_and_go" policy="SuccessOnOne">
+                    <LookForCoke name="look_coke"/>
+                    <Sequence name="search_location">
+                        <GetLocation name="get_loc"/>   
+                        <GoToPose name="go_to_loc"/>
+                    </Sequence>
+                </Parallel>
+                <SetWatchLocations name="set_location" debug="True" />
+                <GoToPose name="get_near"/>
+            </Sequence>
+        </Retry>
+    </Sequence>
+    </BehaviorTree>
+</root>
