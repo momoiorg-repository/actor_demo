@@ -19,9 +19,8 @@ This approach makes it possible to build complex ROS applications in a structure
 The entire program of this sample runs as a single docker and operates by entering simple commands. It is recommended to operate from VSCode.
 
 ## Demo video
-<div><video controls src="doc/demo.mp4" muted="false"></video></div>
 
-![demo video](doc/demo.mp4)
+<div><video controls src="doc/demo.mp4" muted="false"></video></div>
 
 ## Installation
 - Go to working directory of any location
@@ -76,12 +75,12 @@ Next, start the ros_actor command interpreter and run the application.
 
 - From the command prompt, type 'bt_pick_place' to start the demo.
 
-## Application Behavior Tree
+## Behavior Tree Overview
 'bt_pick_place' entered from the command prompt is the file name of the Behavior Tree in xml format. The entity is located in: 
 
 /root/pytwb_ws/src/cm1/cm1/trees/bt_pick_place.xml  
 
-of the docker.
+of the docker.  
 (The /root/pytwb_ws directory in docker corresponds to the /actor_demo/pytwb_ws directory in the Git repository.)
 
 ```
@@ -116,7 +115,7 @@ etc.
 [Detailed description](doc/app.pdf)
 
 ## ros_actor mechanism documentation
-- [Principle of ros_actor](doc/actor.pdf)
+- [Principle of ros_actor](doc/principl.pdf)
 
 ## Related repositories and sites
 - [ros_actor](https://github.com/momoiorg-repository/ros_actor)
