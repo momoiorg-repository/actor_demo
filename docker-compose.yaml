@@ -1,6 +1,6 @@
 services:
-  actordemo:
-    image: actordemo-image
+  actor_demo:
+    image: actor_demo-image
     build:
       context: .
       dockerfile: Dockerfile
