@@ -19,9 +19,9 @@ This approach makes it possible to build complex ROS applications in a structure
 The entire program of this sample runs as a single docker and operates by entering simple commands. It is recommended to operate from VSCode.
 
 ## Demo video
-<div><video controls src="./doc/demo.mp4" muted="false"></video></div>
+<div><video controls src="doc/demo.mp4" muted="false"></video></div>
 
-![demo video](./doc/demo.mp4)
+![demo video](doc/demo.mp4)
 
 ## Installation
 - Go to working directory of any location
@@ -29,8 +29,8 @@ The entire program of this sample runs as a single docker and operates by enteri
 
 ```
 $ printenv DISPLAY # for checking DISPLAY environment variable
-$ git pull http://192.168.128.23/ktago/actordemo.git
-$ cd actordemo
+$ git pull https://github.com/momoiorg-repository/actor_demo.git
+$ cd actor_demo
 $ docker compose build
 $ docker compose up
 ```
@@ -39,7 +39,7 @@ By these operations, docker will now start and an X window will appear. From now
 
 ```
 # rinit
-# cd /root/actordemo/pytwb_ws
+# cd /root/actor_demo/pytwb_ws
 # pytwb
 > create cm1
 Y
@@ -57,7 +57,7 @@ The installation is now complete.
 You will now see one Gazebo screen and two Rviz screens.
 To run the demo, as shown in the video above, you need to add
 - euro pallet,
-- Coke Can,
+- Coke Can,  
 from Gazebo's Insert tab. The euro pallet should be in place at the top left. Any Coke Can position should work.
 
 The original Coke Can model is too heavy to pick as it is, so edit the model and set the weight to around 0.04kg.
@@ -70,7 +70,7 @@ The original Coke Can model is too heavy to pick as it is, so edit the model and
 - Exit model editing mode with cntl-X and save the edited model with a different name
 
 Next, start the ros_actor command interpreter and run the application.
-- Launch vscode, attach to 'actordemo' docker from Remote Explorer, and open the /root/actordemo directory.
+- Launch vscode, attach to 'actor_demo' docker from Remote Explorer, and open the /root/actordemo directory.
 
 - When you run 'pytwb_ws/src/cm1/\_\_main\_\_.py from vscode, a command prompt will appear.
 
@@ -113,10 +113,10 @@ ros_actor is heavily used to implement each Behavior Tree. As the main thing,
 
 etc.
 
-[Detailed description](./doc/app.pdf)
+[Detailed description](doc/app.pdf)
 
 ## ros_actor mechanism documentation
-- [Principle of ros_actor](./doc/actor.pdf)
+- [Principle of ros_actor](doc/actor.pdf)
 
 ## Related repositories and sites
 - [ros_actor](https://github.com/momoiorg-repository/ros_actor)
