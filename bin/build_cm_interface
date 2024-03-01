@@ -1,0 +1,2 @@
+cd /project/test_ws
+colcon build
