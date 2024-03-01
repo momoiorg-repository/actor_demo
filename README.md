@@ -125,3 +125,10 @@ etc.
 - [ros_actor](https://github.com/momoiorg-repository/ros_actor)
 - [pytwb](https://github.com/momoiorg-repository/pytwb_demo)
 - [vector_map](https://github.com/RobotSpatialCognition/vector_map)
+
+# Dependencies  
+Special thanks to the following works:  
+- [“turtlebot3_behavior_demos”](https://github.com/sea-bass/turtlebot3_behavior_demos) by sea-bass  
+Gazebo world is derived from this repository.
+- [lecture page of OpenCV and Python](https://demura.net/education/22777.html) by Demura Kosei  
+detection code of Coke Can image by OpenCV
