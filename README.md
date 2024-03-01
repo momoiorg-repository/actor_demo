@@ -75,6 +75,10 @@ Next, start the ros_actor command interpreter and run the application.
 
 - From the command prompt, type 'bt_pick_place' to start the demo.
 
+- You can also type ‘bt_pick’ to try just search and picking, and ‘reset’ returns the robot to the world's origin so it can try the next attempt.
+
+Picking often fails depending on the location of the Coke Can, so please try devising a better algorithm after trying the original one.
+
 ## Behavior Tree Overview
 'bt_pick_place' entered from the command prompt is the file name of the Behavior Tree in xml format. The entity is located in: 
 

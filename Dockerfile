@@ -4,8 +4,10 @@ SHELL ["/bin/bash", "-c"]
 RUN apt-get update && apt-get install -y --no-install-recommends \
  git python3-pip vim xterm less
 
-RUN apt-get update && apt install -y python3-colcon-common-extensions \
- ros-humble-py-trees ros-humble-py-trees-ros
+#RUN apt-get update && apt install -y python3-colcon-common-extensions \
+# ros-humble-py-trees ros-humble-py-trees-ros
+
+RUN apt-get update && apt install -y python3-colcon-common-extensions
 
 RUN pip3 install pyquaternion matplotlib transforms3d
 
