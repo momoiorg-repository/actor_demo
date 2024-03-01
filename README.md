@@ -79,7 +79,7 @@ Next, start the ros_actor command interpreter and run the application.
 
 Depending on the position of the Coke Can, picking may sometimes fail, so please devise a better algorithm after trying the original one.
 
-## Behavior Tree Overview
+## Behavior Tree overview
 'bt_pick_place' entered from the command prompt is the file name of the Behavior Tree in xml format. The entity is located in: 
 
 /root/pytwb_ws/src/cm1/cm1/trees/bt_pick_place.xml  
@@ -126,9 +126,12 @@ etc.
 - [pytwb](https://github.com/momoiorg-repository/pytwb_demo)
 - [vector_map](https://github.com/RobotSpatialCognition/vector_map)
 
-# Dependencies  
+## Dependencies  
 Special thanks to the following works:  
 - [“turtlebot3_behavior_demos”](https://github.com/sea-bass/turtlebot3_behavior_demos) by sea-bass  
 Gazebo world is derived from this repository.
 - [lecture page of OpenCV and Python](https://demura.net/education/22777.html) by Demura Kosei  
 detection code of Coke Can image by OpenCV
+
+## About us
+[momoi.org](https://momoi.org/?yada_wiki=ros-related-projects)
