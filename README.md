@@ -20,7 +20,7 @@ The entire program of this sample runs as a single docker and operates by enteri
 
 ## Demo video
 
-<div><video controls src="doc/demo.mp4" muted="false"></video></div>
+[demo](doc/demo.mp4)
 
 ## Installation
 - Go to working directory of any location
