@@ -115,7 +115,7 @@ etc.
 [Detailed description](doc/app.pdf)
 
 ## ros_actor mechanism documentation
-- [Principle of ros_actor](doc/principl.pdf)
+- [Principle of ros_actor](doc/principle.pdf)
 
 ## Related repositories and sites
 - [ros_actor](https://github.com/momoiorg-repository/ros_actor)
