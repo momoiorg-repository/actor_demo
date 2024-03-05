@@ -19,14 +19,14 @@ RUN mkdir -p /project/lib_ws/src
 WORKDIR /project/lib_ws/src
 COPY dependencies.repos .
 RUN vcs import < dependencies.repos
+
+# patch downloaded modules before build
 WORKDIR /project/lib_ws/src/pymoveit2
 COPY ./project/resource/pymoveit2_setup.py setup.py
 
-# add
 WORKDIR /project/lib_ws/src/gazebo-pkgs/gazebo_grasp_plugin
 COPY ./project/resource/grasp/CMakeLists.txt CMakeLists.txt
 COPY ./project/resource/grasp/package.xml package.xml
-
 WORKDIR /project/lib_ws/src/gazebo-pkgs/
 RUN rm -r gazebo_test_tools gazebo_state_plugins gazebo_world_plugin_loader
 
@@ -45,7 +45,6 @@ COPY ./bin bin
 WORKDIR /root
 
 RUN echo "source /opt/ros/humble/setup.bash" >> .bashrc
-RUN echo "source /project/test_ws/install/setup.bash" >> .bashrc
 RUN echo "source /project/lib_ws/install/setup.bash" >> .bashrc
 RUN echo "source /usr/share/gazebo/setup.sh" >> .bashrc
 RUN echo "export GAZEBO_PLUGIN_PATH=$GAZEBO_PLUGIN_PATH:/project/lib_ws/build/gazebo_grasp_plugin" >> .bashrc
@@ -56,7 +55,7 @@ RUN echo 'PATH=$PATH:/root/bin' >> .bashrc
 RUN apt-get update && apt-get install -y --no-install-recommends \
  ros-humble-rmw-cyclonedds-cpp \
  ros-humble-gazebo-* ros-humble-navigation2 \
- ros-humble-nav2-bringup ros-humble-turtlebot3*
+ ros-humble-nav2-bringup
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
  ros-humble-dynamixel-sdk ros-humble-ros2-control ros-humble-ros2-controllers \

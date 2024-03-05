@@ -46,6 +46,9 @@ repositories:
   vector_map:
     type: git
     url: https://github.com/RobotSpatialCognition/vector_map.git
+  actor_interface:
+    type: git
+    url: https://github.com/momoiorg-repository/actor_interface.git
   ros_actor:
     type: git
     url: https://github.com/momoiorg-repository/ros_actor.git
