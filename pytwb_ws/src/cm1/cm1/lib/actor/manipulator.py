@@ -6,8 +6,6 @@ from ros_actor import actor, SubNet
 
 adjust_plus = 1.1  
 adjust_minus = 0.9
-sf_plus = 1.2
-sf_minus = 1.3813
   
 class ManipulatorNetwork(SubNet):
     # set to home position
@@ -106,7 +104,7 @@ def get_joint_state(*args):
     @actor
     def ad(self):
         x, y, angle = self.run_actor('object_loc')
-        da = degrees(angle)
+#        da = degrees(angle)
         if angle > 0:
             angle *= adjust_plus
         else:
@@ -122,11 +120,7 @@ def get_joint_state(*args):
     @actor
     def fit(self):
         _, _, angle, distance = self.run_actor('measure_center')
-        da = degrees(angle)
-        if angle > 0:
-            angle *= sf_plus
-        else:
-            angle *= sf_minus
+#        da = degrees(angle)
 #        print(f'org angle: {da}, adjust: {degrees(angle)}, distance: {distance}')
         cur = list(self.get_value('joint_stat'))
         cur[0] = angle

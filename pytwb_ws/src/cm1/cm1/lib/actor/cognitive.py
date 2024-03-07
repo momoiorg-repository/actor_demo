@@ -80,18 +80,14 @@ class CognitiveNetwork(SubNet):
         data = self.run_actor('depth')
         cv_bridge = self.get_value('cv_bridge')
         depth_image = cv_bridge.imgmsg_to_cv2(data)
-        det_line = depth_image[-10]
+        det_line = depth_image[-5]
         index = det_line.argmin()
         distance = det_line[index]
         x, y = self.pix_to_coordinate(index, distance, depth_image)
         point = PointEx(x,y)
-        while True:
-            point = self.run_actor('find_object')
-            if point: break
-            self.run_actor('sleep', 1)
         trans = self.run_actor('var_trans', target)
         point.setTransform(trans.transform)
-        angle = atan2(point.y, point.x) + radians(1.85)
+        angle = atan2(point.y, point.x) + radians(2.2)
         return point.x, point.y, angle, distance
 
     def pix_to_coordinate(self, pix, distance, depth_image):
