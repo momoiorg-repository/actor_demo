@@ -20,7 +20,7 @@ The entire program of this sample runs as a single docker and operates by enteri
 
 ## Demo video
 
-[demo](doc/demo.mp4)
+[![](https://img.youtube.com/vi/c1s3RkVEzrY/0.jpg)](https://www.youtube.com/watch?v=c1s3RkVEzrY)
 
 ## Installation
 - Go to working directory of any location
