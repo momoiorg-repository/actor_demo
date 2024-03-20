@@ -15,12 +15,10 @@ def get_approach_pose(region, point, current):
                 i_x += ip.x
                 i_y += ip.y
                 points += 1
-        i_x /= points
-        i_y /= points
     if points <= 0:
         approach_line = Line(point, current_point)
     else:
-        approach_line = Line(point, Point(i_x, i_y))
+        approach_line = Line(point, Point(i_x/points, i_y/points))
     t = Symbol("t")
     px = approach_line.arbitrary_point(parameter=t)
     f = solve(approach_line.p1.distance(px)-0.6, t)
